@@ -10,7 +10,7 @@ links = [
 
 # Locators 
 
-locator_btn_go_payment = 'btn-go-to-payment'
+locator_btn_go_payment = 'btn-go-to-payment' 
 locator_btn_register = 'begin-session-register'
 locator_input_email = 'client-email'
 locator_name_form = 'input-firstName'
@@ -23,11 +23,21 @@ locator_continue_form = 'go-to-shipping'
 
 locator_btn_modal_get_code = 'loginWithAccessKeyBtn'
 locator_send_request_code = 'sendAccessKeyBtn'
-
+locator_xpath_code = "/html/body/header/div[3]/div[1]"
 locator_input_token = 'access-code'
 locator_confirm_code = 'confirmLoginAccessKeyBtn'
 
 
 locator_ymail_login = 'login'
 locator_ymail_continue = 'refreshbut'
+
+# Locators step 2
+locator_shipping_delivery = 'shipping-option-delivery'
+locator_state = 'ship-state'
+locator_city = 'city'
+locator_ship_street = 'ship-street'
+locator_ship_complement = 'ship-complement'
+locator_ship_receiver = 'ship-receiverName'
+locator_btn_save_shipping = 'custom-save-address-button' #class
+
 

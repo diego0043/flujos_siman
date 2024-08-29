@@ -5,13 +5,13 @@ from methods import *
 for link in range(len(links)):
 
     if link == 0:
-        
-        driver.get(links[link])
-        waitingPage()
-        email = generate_ramdom_email()
-        fill_form(email)
-        get_code_yopmail(email)
-
+        try:
+            driver.get(links[link])
+            email = generate_ramdom_email()
+            waitingPage()
+            login_with_code(email)
+        except:
+            print('Error al llenar el formulario')
     else: 
         # Abre una nueva pestaña con una URL específica
         """ driver.execute_script(f"window.open('{links[link]}', '_blank');")
